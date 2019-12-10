@@ -1,0 +1,4 @@
+com\company\flight\model\FlightDetail.class
+com\company\flight\controller\FlightDetailController.class
+com\company\flight\repository\FlightDetailDaoImpl.class
+com\company\flight\service\FlightServiceImpl.class
