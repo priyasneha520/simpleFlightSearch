@@ -4,26 +4,69 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { TableComponent } from './table/table.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {CdkTableModule} from '@angular/cdk/table';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {
+  MatTableModule,
+  MatIconModule,
+  MatDialogModule,
+  MatSortModule,
+  MatButtonModule,
+  MatSelectModule,
+  MatCardModule,
+  MatPaginatorModule,
+  MatInputModule,
+  MatFormFieldModule,
+  MatCheckboxModule,
+  MatStepperModule,
+  MatProgressSpinnerModule
+} from '@angular/material';
+import { ItemService } from './item.service';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
   ],
   imports: [
+    MatTableModule,
+    MatIconModule,
+    MatDialogModule,
+    MatSortModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatCardModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSortModule,
+    MatCardModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    CdkTableModule,
-    NgbModule.forRoot(),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule,
+    CommonModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatTableModule,
+    MatPaginatorModule,
+    HttpClientModule,
+    MatSortModule,
+    MatCardModule,
+    MatStepperModule,
+    MatProgressSpinnerModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,4 @@
 export interface FlightDetail {
-    position: number;
-
     flightNumber: number;
     carrier: string;
     origin: string;
